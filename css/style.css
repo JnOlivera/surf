@@ -21,6 +21,7 @@ nav {
 .navigation li {
     display: inline;
     margin: 0 20px;
+   
 }
 
 .navigation a {
@@ -185,37 +186,42 @@ width: 30%;
 }
 
 .overlay-icons i{
-  width: 180px;
+  width: 125px;
   height: 25px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center; 
   border: 1px solid black;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(202, 153, 153, 0.5);
   border-radius: 1rem;
+  font-size: 14px;
+  
+  
 }
 
 .time-icon, .ages-icon, .people-icon {
   display: block;
   margin-bottom: 5px;
+  
+
 }
 
 .dollar-icon {
   position: absolute;
-  width:80px;
-  height: 80px;
+  width:75px;
+  height: 75px;
   bottom:10px;
   right: 20px;
   display: flex;
   border: 1px solid black;
   font-size: 20px;
-  font-family: "Font Awesome 6 Free";
+  font-family: 'Fink Sands', sans-serif;
   border-radius: 0.5rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.5); 
   color: white;
   padding: 5px;
 }
@@ -240,4 +246,70 @@ width: 30%;
   font-family: 'Fink Sands', sans-serif;
   font-weight:normal; 
   margin-left: 8px;
+}
+
+
+/*footer*/
+.footer {
+  background-color: #3ea6a1;
+
+  color: white;
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Fink Sands', sans-serif;
+  align-items: center; 
+  text-shadow: 2px 2px #ff9900;
+ 
+}
+
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+ul li {
+  font-size: 17px;
+  margin: 5px 0;
+  
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul li a:hover {
+  text-decoration: none;
+}
+
+i {
+  margin-right: 10px;
+}
+
+.social-icons {
+  display: flex; 
+  align-items: center; 
+  
+}
+
+.social-icons i {
+  color: white; 
+  margin: 15px;
+ font-size: 30px;
+}
+
+.column i, .column h3{
+   text-shadow: 2px 2px #ff9900;
+}
+.column1 li{
+  margin-top: 15px;
 }

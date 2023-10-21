@@ -460,3 +460,71 @@ i {
     background: #3ea6a1; 
 }
 
+.section-history{
+  height: 400px;
+  display:flex;
+  background-color: #00aaff;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Fink Sands', sans-serif;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*Our Family*/
+.our-history {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.our-history::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - -2px);
+  background-color: #ff9900; 
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.our-history::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+  background-color: #ff9900; 
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.our-history:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+
+.our-history:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+.our-history:hover {
+  border: 2px solid #fefefe;
+}
+
+.our-history span {
+  position: relative;
+  z-index: 3;
+}

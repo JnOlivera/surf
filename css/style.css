@@ -562,3 +562,52 @@ i {
   position: relative;
   z-index: 3;
 }
+
+.section-reviews{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-review{
+  width: 300px;
+  height: 300px;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:#ff9900;
+  font-family: 'Fink Sands', sans-serif;
+  border-radius: 1rem;
+  margin:20px;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.card-review p{
+  width: 250px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.card-review2{
+  width: 300px;
+  height: 300px;
+  color:#ff9900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ff9900;
+  flex-direction: column;
+  font-family: 'Fink Sands', sans-serif;
+  border-radius: 1rem;
+  margin:20px;
+  box-shadow: 10px 5px 5px #ff9900;
+}
+
+.card-review2 p{
+  width: 250px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+

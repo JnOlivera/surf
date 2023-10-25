@@ -31,15 +31,85 @@ nav {
     font-weight: bold;
     transition: color 0.3s;
 }
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
 
 .navigation a:hover {
     color: #ff9900; 
 }
 
+/* Estilos para el menú desplegable */
+
+.has-submenu {
+    position: relative;
+}
+
+.toggle {
+    display: none;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 55px;
+    background-color: #3ea6a1;
+    border: 1px solid #009688;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    list-style: none;
+    padding: 10px 15px; 
+    text-align: center;
+    z-index: 1;
+}
+
+
+.submenu li {
+    white-space: nowrap; 
+  
+    padding: 5px 10px;
+ 
+}
+
+/* Estilos para el indicador de flecha */
+
+.fa-arrow-down {
+    font-size: 20px; 
+    left: 10px;
+    color: white;
+    display: inline-block;
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+.has-submenu:hover .fa-arrow-down {
+    transform: rotate(180deg); 
+}
+
+
+.has-submenu label[for="surfLessonsToggle"] {
+    color: white; 
+     font-family: 'Fink Sands', sans-serif;
+     font-weight: bold;
+     font-size: 18px;
+}
+.hoverable:hover {
+    color: orange; 
+}
+
 /* first box*/
 
 .promo-box {
-    background-image: url('tu-video-en-produccion.jpg'); /* Agrega la URL de tu video de fondo cuando esté listo */
+    background-image: url('tu-video-en-produccion.jpg'); 
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -562,3 +632,5 @@ i {
   position: relative;
   z-index: 3;
 }
+
+

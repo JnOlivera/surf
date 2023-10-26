@@ -3,9 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poipu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tu Sitio Web</title>
   </head>
   <body>
-    <p>contenido poipu</p>
+    <nav class="sticky">
+      <ul class="navigations">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="ourStory.html">OUR STORY</a></li>
+        <li class="has-submenu">
+          <input type="checkbox" id="surfLessonsToggle" class="toggle" />
+          <label for="surfLessonsToggle" class="hoverable">
+            <span class="hoverable">SURF LESSONS</span></label
+          ><i class="fa-solid fa-arrow-down"></i>
+          <ul class="submenu">
+            <li><a href="poipuBeachSurf.html">POIPU BEACH SURF</a></li>
+            <li><a href="privateLessons.html">PRIVATE LESSONS</a></li>
+            <li>
+              <a href="surfGuideForAdvanced.html">SURF GUIDE FOR ADVANCED</a>
+            </li>
+            <li><a href="rochelleBallard.html">ROCHELLE BALLARD</a></li>
+          </ul>
+        </li>
+        <li><a href="beachRental.html">BEACH RENTAL</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="surfGuide.html">SURF GUIDE</a></li>
+      </ul>
+    </nav>
+    <div class="photo-poipu">
+      <img src="./photos/Webp.net-resizeimage.jpg" alt="" />
+ 
   </body>
 </html>

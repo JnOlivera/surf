@@ -44,6 +44,36 @@ nav {
     color: #ff9900; 
 }
 
+/* nav con posición fija*/
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #3ea6a1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 100;
+    text-align: center;
+}
+
+
+.sticky .navigations li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.sticky .navigations a {
+    text-decoration: none;
+    color: white; 
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sticky .navigations a:hover {
+    color: #ff9900;
+}
+
+
 /* Estilos para el menú desplegable */
 
 .has-submenu {
@@ -632,3 +662,32 @@ i {
   position: relative;
   z-index: 3;
 }
+
+/*section-poipu*/
+.photo-poipu {
+  position: relative;
+  width: 100%; 
+  height: 800px;
+  overflow: hidden;
+}
+
+.photo-poipu img {
+  width: 100%; 
+  height: auto; 
+}
+
+
+.p {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+  top: 100%; /* Cambia la posición de arriba a abajo */
+  left: 0;
+  width: 100%;
+}
+

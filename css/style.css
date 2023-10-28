@@ -12,14 +12,21 @@ nav {
 }
 
 .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
-    margin: 0;
+    margin-right: 15vw;
     padding: 0;
     text-align: center;
 }
 
+.navigation img{
+  margin-right: 5vw;
+}
+
 .navigation li {
-    display: inline;
+  
     margin: 0 20px;
    
 }
@@ -42,6 +49,13 @@ nav {
 
 .navigation a:hover {
     color: #ff9900; 
+}
+
+.logo-surf{
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* nav con posición fija*/
@@ -407,7 +421,7 @@ i {
 .social-icons {
   display: flex; 
   align-items: center; 
-  
+  justify-content: space-around;
 }
 
 .social-icons i {

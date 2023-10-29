@@ -375,6 +375,7 @@ nav {
 .p-icons {
   font-family: 'Fink Sands', sans-serif;
   font-weight: normal;
+  margin: 0;
   margin-left: 8px;
 }
 
@@ -692,7 +693,10 @@ i {
   position: relative;
   z-index: 3;
 }
-
+/*reviews responsive */
+.reviews-responsive{
+  display: none;
+}
 /*section-review*/
 .section-reviews {
   display: flex;
@@ -839,6 +843,12 @@ i {
   .menu-noresponsive {
     display: none;
   }
+  .respmenu nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; 
+  }
+  
 
   .respmenu a {
     color: inherit;
@@ -919,9 +929,13 @@ i {
   }
 
   .section-reviews {
+    display: none;
     flex-direction: column;
     justify-content: center;
     margin: 0;
+  }
+  .reviews-responsive{
+    display: contents;
   }
 
   .card-review{
@@ -933,6 +947,21 @@ i {
     margin:auto;
     margin-bottom: 20px;
   }
+.section-title-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3px;
+  background-color: #ded6d6;
+  margin: 6px 12px;
 
+}
+  .footer{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   
 }

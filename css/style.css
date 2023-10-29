@@ -9,6 +9,7 @@ body {
 nav {
   background-color: #3ea6a1;
   padding: 30px 0;
+  
 }
 
 .respmenu {
@@ -32,6 +33,7 @@ nav {
 .navigation li {
 
   margin: 0 20px;
+  
 
 }
 
@@ -57,8 +59,8 @@ nav {
 }
 
 .logo-surf {
-  width: 220px;
-  height: 220px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -132,16 +134,17 @@ nav {
 
 /* Estilos para el indicador de flecha */
 
-.fa-arrow-down {
+.fa-angle-down {
   font-size: 20px;
-  left: 10px;
+ 
+  margin-left: 7px;
   color: white;
   display: inline-block;
   transform: translateY(0);
   transition: transform 0.3s;
 }
 
-.has-submenu:hover .fa-arrow-down {
+.has-submenu:hover .fa-angle-down {
   transform: rotate(180deg);
 }
 
@@ -800,6 +803,7 @@ i {
 .extra-info {
   width: 40%;
   height: 100%;
+  margin-bottom: 4%;
   margin-left: 12%;
   margin-top: 20px;
   font-family: 'Fink Sands', sans-serif;
@@ -824,6 +828,11 @@ i {
   font-family: 'Fink Sands', sans-serif;
 }
 
+.poipu-card{
+    width: 28%;
+  
+
+}
 
 /*Responsive Media Queries*/
 @media(max-width:900px) {

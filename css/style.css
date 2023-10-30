@@ -10,6 +10,7 @@ nav {
   background-color: #3ea6a1;
   padding: 30px 0;
   
+  
 }
 
 .respmenu {
@@ -18,6 +19,7 @@ nav {
 
 .navigation {
   display: flex;
+
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -66,6 +68,8 @@ nav {
 }
 
 /* nav con posición fija*/
+
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -119,18 +123,22 @@ nav {
   border-top: none;
   border-radius: 0 0 5px 5px;
   list-style: none;
-  padding: 10px 15px;
-  text-align: center;
+  padding: 5px 10px;
+   text-align: left;
   z-index: 1;
 }
 
 
 .submenu li {
   white-space: nowrap;
-
   padding: 5px 10px;
 
 }
+
+.submenu a{
+  font-size: 17px;
+}
+
 
 /* Estilos para el indicador de flecha */
 
@@ -202,20 +210,18 @@ nav {
 
 /*card lessons*/
 .container-card {
-
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
-
-
-
 }
 
 .card {
-
-  width: 23%;
+  
+ width: 23%;
   margin: 10px;
+  flex-direction: column;
   margin-bottom: 70px;
   border-radius: 20px;
   overflow: hidden;
@@ -234,7 +240,7 @@ nav {
 }
 
 .card .contenido {
-
+  
   padding: 15px;
   text-align: center;
   color: white;
@@ -244,6 +250,7 @@ nav {
 
 .card .contenido a {
   width: 40%;
+  
   text-decoration: none;
   display: inline-block;
   color: white;
@@ -254,7 +261,10 @@ nav {
   margin: 10px;
 
 
+
 }
+
+
 
 .contenido p {
   max-width: 400px;
@@ -847,17 +857,20 @@ i {
     list-style: none;
     padding: 0;
     text-align: center; 
+    
   }
-  
+  .respmenu li{
+   font-weight: bold;
+  }
 
-  .respmenu a {
+  .respmenu a, .has-submenu {
     color: inherit;
     text-decoration: none;
     display: block;
     padding: 10px 20px;
     border-bottom: 2px solid #456789;
+    
     max-width: 100%;
-    background: #ff9900;
     font-variant: small-caps;
     text-shadow: 1px 1px black;
   }
@@ -879,10 +892,12 @@ i {
   .respmenu .fa-times {
     font-size: 48px;
     pointer-events: none;
+    
   }
 
   .respmenu input[type="checkbox"] {
     opacity: 0;
+   
   }
 
   .respmenu {
@@ -891,23 +906,30 @@ i {
     position: relative;
     background: #009688;
     min-height: 48px;
+    
   }
 
   .respmenu nav {
     display: none;
+   
   }
 
   .respmenu input:checked~nav {
     display: block;
+   
   }
 
   .respmenu input:checked~.fa-bars {
     display: none;
+   
+
   }
 
   .respmenu input:not(:checked)~.fa-times {
     display: none;
   }
+
+
 
   /*Cards lessons*/
   .container-card {
@@ -962,6 +984,18 @@ i {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .carousel-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
   }
   
 }

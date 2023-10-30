@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Tu Sitio Web</title>
   </head>
-  <nav class="menu-noresponsive">
+  <nav class="menu-noresponsive sticky">
     <ul class="navigation">
       <img src="./photos/NukumoiRetroLogo.jpeg" alt="Logo" class="logo-surf" />
       <li><a href="index.html">HOME</a></li>
@@ -36,7 +36,34 @@
       <li><a href="surfGuide.html">SURF GUIDE</a></li>
     </ul>
   </nav>
-
+  <div class="respmenu">
+    <input type="checkbox" />
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times"></i>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="ourStory.html">OUR STORY</a></li>
+        <li class="has-submenu">
+          <input type="checkbox" id="surfLessonsToggle" class="toggle" />
+          <label for="surfLessonsToggle" class="hoverable">
+            <span class="hoverable">SURF LESSONS</span></label
+          ><i class="fa-solid fa-angle-down"></i>
+          <ul class="submenu">
+            <li><a href="poipuBeachSurf.html">POIPU BEACH SURF</a></li>
+            <li><a href="privateLessons.html">PRIVATE LESSONS</a></li>
+            <li>
+              <a href="surfGuideForAdvanced.html">SURF GUIDE FOR ADVANCED</a>
+            </li>
+            <li><a href="rochelleBallard.html">ROCHELLE BALLARD</a></li>
+          </ul>
+        </li>
+        <li><a href="beachRental.html">BEACH RENTAL</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="surfGuide.html">SURF GUIDE</a></li>
+      </ul>
+    </nav>
+  </div>
   <body>
     <div class="container-shop">
       <div class="card-shop">
